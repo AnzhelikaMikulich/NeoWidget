@@ -1,0 +1,596 @@
+/* #mik-rating-block {
+  font-family: sans-serif;
+}
+
+.mik-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: #a3d95c;
+  margin: 12px 0;
+  padding: 20px;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mik-left, .mik-middle, .mik-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+}
+
+.mik-logo {
+  width: 100px;
+  margin: 10px 0;
+}
+
+.mik-number {
+  background: orange;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.mik-name {
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.mik-stars {
+  color: gold;
+  margin-top: 5px;
+}
+
+.mik-bonus span {
+  font-weight: bold;
+}
+
+.mik-bonus a {
+  color: #3366cc;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.mik-payments img {
+  height: 20px;
+  margin: 4px;
+}
+
+.mik-btn {
+  margin-top: 10px;
+  background: linear-gradient(to right, #f7b733, #fc4a1a);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .mik-card {
+    flex-direction: column;
+    text-align: center;
+  }
+} */
+
+#mik-rating-block{
+        width: 100%;
+          font-family: sans-serif;
+}
+.mik-full-wrapper{
+        width: 100%
+
+}
+.mik-full-wrapper .mik-rating-title{
+margin: 40px auto 30px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: var(--h_title_color);
+    font-weight: 800;
+}
+.mik-full-wrapper .mik-cards-list{
+display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+.mik-full-wrapper .mik-card {
+}
+.mik-full-wrapper .mik-card .mik-left {
+}
+.mik-full-wrapper .mik-card .mik-number {
+}
+.mik-full-wrapper .mik-card .mik-logo {
+}
+.mik-full-wrapper .mik-card .mik-name {
+}
+.mik-full-wrapper .mik-card .mik-stars {
+}
+.mik-full-wrapper .mik-card .mik-middle {
+}
+.mik-full-wrapper .mik-card .mik-bonus {
+}
+.mik-full-wrapper .mik-card .mik-right {
+}
+.mik-full-wrapper .mik-card .mik-pay-label {
+}
+.mik-full-wrapper .mik-card .mik-pay {
+}
+.mik-full-wrapper .mik-card .mik-btn {
+}
+
+.shortcode-2-casino {
+    width: 100%
+}
+
+.shortcode-2-casino_content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center
+}
+
+.shortcode-2-casino_item {
+    position: relative;
+    border: 1px solid rgb(195, 194, 194);
+    padding: 25px 25px 25px 35px;
+    background-color: var(--short_bg);
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    border-radius: var(--button_border)
+}
+
+.shortcode-2-casino_counter {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 2px solid rgb(195, 194, 194);
+    background-color: var(--btn-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 800;
+    z-index: 2
+}
+
+.shortcode-2-casino_box {
+    flex-shrink: 0;
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px
+}
+
+.shortcode-2-casino_box.bg_box {
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--button_border);
+    height: 180px;
+    justify-content: center;
+    padding: 16px
+}
+
+.shortcode-2-casino_box.bg_box.top {
+    justify-content: flex-start
+}
+
+.open_bg_box {
+    opacity: 0;
+    visibility: hidden;
+    cursor: pointer;
+    transition: var(--transition_main);
+    width: 100%;
+    text-align: right;
+    font-weight: 600;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px
+}
+
+.open_bg_box.visible {
+    opacity: 1;
+    visibility: visible;
+    z-index: 3
+}
+
+.shortcode-2-casino_box.bg_box::before {
+    background-color: var(--btn-bg-hover);
+    opacity: .12;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1
+}
+
+.shortcode-2-casino_logo {
+    width: 90%;
+    height: 100px;
+    overflow: hidden
+}
+
+.shortcode-2-casino_logo img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain
+}
+
+.shortcode-2-casino_title {
+    font-size: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    opacity: .7
+}
+
+.shortcode-2-casino_text_bonus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+    font-size: 18px;
+    z-index: 3;
+    position: relative
+}
+
+.shortcode-2-casino_text_bonus span {
+    color: var(--btn-bg-hover)
+}
+
+.shortcode-2-casino_providers {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    font-size: 20px
+}
+
+.shortcode-2-casino .deposit_metod {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.shortcode-2-casino .img_deposit {
+    width: 60px
+}
+
+.shortcode-2-casino .img_deposit img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: center;
+    object-position: center
+}
+
+.shortcode-2-casino_box .btn-el {
+    width: 90%
+}
+
+.shortcode-2-casino_btn {
+    margin: 30px auto
+}
+
+.shortcode-2-casino .all-btn {
+    margin: 30px auto
+}
+
+@media only screen and (max-width:1520px) {
+    .shortcode-2-casino_content {
+        gap: 1.316vw
+    }
+
+    .shortcode-2-casino_item {
+        padding: 1.645vw
+    }
+
+    .shortcode-2-casino_counter {
+        width: 3.618vw;
+        height: 3.618vw;
+        font-size: 1.184vw
+    }
+
+    .shortcode-2-casino_box:nth-child(3) {
+        border-radius: var(--button_border);
+        padding: .263vw
+    }
+
+    .shortcode-2-casino_title {
+        font-size: 1.316vw
+    }
+
+    .shortcode-2-casino_text_bonus {
+        gap: .329vw;
+        font-size: 1.184vw
+    }
+
+    .shortcode-2-casino_providers {
+        gap: .329vw;
+        font-size: 1.316vw
+    }
+
+    .shortcode-2-casino .deposit_metod {
+        gap: .395vw
+    }
+
+    .shortcode-2-casino .img_deposit {
+        width: 3.947vw
+    }
+
+    .shortcode-2-casino_btn {
+        margin: 1.974vw auto
+    }
+
+    .shortcode-2-casino_box {
+        width: 24%
+    }
+
+    .shortcode-2-casino .all-btn {
+        margin: 1.711vw auto
+    }
+
+    .shortcode-2-casino_box.bg_box {
+        height: 11.842vw;
+        padding: 1.053vw
+    }
+
+    .open_bg_box {
+        padding: 3px
+    }
+}
+
+@media only screen and (max-width:1120px) {
+    .shortcode-2-casino_content {
+        gap: 1.953vw
+    }
+
+    .shortcode-2-casino_item {
+        padding: 1.465vw 1.465vw 1.465vw 2.442vw;
+        width: 93%
+    }
+
+    .shortcode-2-casino_counter {
+        width: 5.371vw;
+        height: 5.371vw;
+        font-size: 1.758vw
+    }
+
+    .shortcode-2-casino_box:nth-child(3) {
+        padding: .39vw
+    }
+
+    .shortcode-2-casino_title {
+        font-size: 1.953vw
+    }
+
+    .shortcode-2-casino_text_bonus {
+        gap: .488vw;
+        font-size: 1.758vw
+    }
+
+    .shortcode-2-casino_providers {
+        gap: .488vw;
+        font-size: 1.953vw
+    }
+
+    .shortcode-2-casino .deposit_metod {
+        gap: .586vw
+    }
+
+    .shortcode-2-casino .img_deposit {
+        width: 5.859vw
+    }
+
+    .shortcode-2-casino_btn {
+        margin: 2.93vw auto
+    }
+
+    .shortcode-2-casino_box {
+        width: 24%;
+        gap: .586vw
+    }
+
+    .shortcode-2-casino .all-btn {
+        margin: 2.54vw auto
+    }
+
+    .shortcode-2-casino_box.bg_box {
+        height: 17.578vw;
+        padding: 1.563vw
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .shortcode-2-casino_content {
+        gap: 5.729vw;
+        padding-top: 6vw
+    }
+
+    .shortcode-2-casino {
+        padding-top: 3vw
+    }
+
+    .shortcode-2-casino .title-block {
+        margin: 0 auto;
+        font-size: 4.687vw
+    }
+
+    .shortcode-2-casino_item {
+        padding: 4.255vw 1.953vw 1.953vw 1.954vw;
+        width: 93%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.302vw
+    }
+
+    .shortcode-2-casino_counter {
+        width: 7.161vw;
+        height: 7.161vw;
+        font-size: 2.344vw;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%, -50%)
+    }
+
+    .shortcode-2-casino_box:nth-child(3) {
+        padding: .52vw
+    }
+
+    .shortcode-2-casino_title {
+        font-size: 2.604vw
+    }
+
+    .shortcode-2-casino_text_bonus {
+        gap: .651vw;
+        font-size: 2.344vw
+    }
+
+    .shortcode-2-casino_providers {
+        gap: .651vw;
+        font-size: 2.604vw
+    }
+
+    .shortcode-2-casino .deposit_metod {
+        gap: .781vw
+    }
+
+    .shortcode-2-casino .img_deposit {
+        width: 7.812vw
+    }
+
+    .shortcode-2-casino_btn {
+        margin: 3.907vw auto
+    }
+
+    .shortcode-2-casino_box {
+        width: 100%;
+        gap: .781vw
+    }
+
+    .shortcode-2-casino_box .btn-el {
+        width: 100%
+    }
+
+    .shortcode-2-casino_logo {
+        width: 26.042vw
+    }
+
+    .shortcode-2-casino .all-btn {
+        margin: 3.387vw auto
+    }
+
+    .shortcode-2-casino_box.bg_box {
+        height: 19.531vw;
+        padding: 1.563vw
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .shortcode-2-casino_content {
+        gap: 6.933vw;
+        padding-top: 7vw
+    }
+
+    .shortcode-2-casino {
+        padding-top: 6vw
+    }
+
+    .shortcode-2-casino .title-block {
+        margin: 0 auto
+    }
+
+    .shortcode-2-casino_item {
+        padding: 6vw 2.667vw 2.667vw 2.667vw;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.666vw
+    }
+
+    .shortcode-2-casino_counter {
+        width: 10.133vw;
+        height: 10.133vw;
+        font-size: 4.267vw
+    }
+
+    .shortcode-2-casino_box:nth-child(3) {
+        padding: 1.065vw
+    }
+
+    .shortcode-2-casino_title {
+        font-size: 4.8vw
+    }
+
+    .shortcode-2-casino_text_bonus {
+        gap: 1.333vw;
+        font-size: 4.267vw
+    }
+
+    .shortcode-2-casino_providers {
+        gap: 1.333vw;
+        font-size: 4.8vw
+    }
+
+    .shortcode-2-casino .deposit_metod {
+        gap: 1.599vw
+    }
+
+    .shortcode-2-casino .img_deposit {
+        width: 15.999vw
+    }
+
+    .shortcode-2-casino_btn {
+        margin: 6.4vw auto
+    }
+
+    .shortcode-2-casino_box {
+        width: 100%;
+        gap: 1.599vw
+    }
+
+    .shortcode-2-casino_box .btn-el {
+        width: 100%
+    }
+
+    .shortcode-2-casino_logo {
+        width: 37.333vw
+    }
+
+    .shortcode-2-casino .all-btn {
+        margin: 6.4vw auto
+    }
+
+    .shortcode-2-casino_box.bg_box {
+        height: 34.667vw;
+        padding: 2.667vw
+    }
+}

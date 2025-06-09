@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Trino Casino",
+    "logo": "trino.png",
+    "rating": 4,
+    "bonus": "$2800",
+    "link": "https://example.com/cashed",
+    "note": "* New customers only. 100% match bonus based",
+    "deposit": ["Skrill", "Neteller", "Payeer", "ATM-Online"],
+    "button": "PLAY NOW"
+  },
+  {
+    "name": "Starzino",
+    "logo": "starzino.png",
+    "rating": 5,
+    "bonus": "$2200",
+    "link": "https://example.com/trino",
+    "note": "* New customers only. 100% match bonus based",
+    "deposit": ["Skrill", "Visa", "PayPal", "ATM-Online"],
+    "button": "PLAY NOW"
+  },
+  {
+    "name": "Pribet",
+    "logo": "pribet.png",
+    "rating": 4,
+    "bonus": "$3800",
+    "link": "https://example.com/cashed",
+    "note": "* New customers only. 100% match bonus based",
+    "deposit": ["Stakelogic", "Tombola", "Zillion", "Wazdan"],
+    "button": "PLAY NOW"
+  },
+  {
+    "name": "Nova Jackpot",
+    "logo": "novajackpot.png",
+    "rating": 3,
+    "bonus": "$1200",
+    "link": "https://example.com/trino",
+    "note": "* New customers only. 100% match bonus based",
+    "deposit": ["Swintt", "Yggdrasil", "Yggdrasil", "Aktia"],
+    "button": "PLAY NOW"
+  }
+]
