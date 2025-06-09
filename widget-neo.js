@@ -43,7 +43,8 @@ console.log(baseUrlNeoMik);
           <div class="mik-card">
             <div class="mik-left">
          <div class="mik-number">${index + 1}</div>
-              <img src="${baseUrlNeoMik}/images/${casino.logo}" alt="${casino.name}" class="mik-logo">
+         <a href="${casino.link}" target="_blank" title="${casino.name}" rel="nofollow" class="link-mik-logo">
+              <img src="${baseUrlNeoMik}/images/${casino.logo}" alt="${casino.name}" class="mik-logo"></a>
               <div class="mik-name">${casino.name}</div>
               <div class="mik-stars">${"★".repeat(casino.rating)}${"☆".repeat(5 - casino.rating)}</div>
             </div>
@@ -55,18 +56,18 @@ console.log(baseUrlNeoMik);
               </div>
             </div>
             <div class="mik-right">
-              <div class="mik-pay-label">Deposit Methods:</div>
+              <div class="mik-pay-label">Deposit Methods</div>
               <div class="mik-pay">${depositIcons}</div>
-              <a class="mik-btn" href="${casino.link}" target="_blank">${casino.button}</a>
             </div>
+            <div class="mik-right">
+             <a class="mik-btn" href="${casino.link}" target="_blank">${casino.button}</a>
+             </div>
           </div>
         `;
         casinoListWrapper.insertAdjacentHTML("beforeend", html_neo_mik);
       });
 
-      // Добавляем список казино внутрь полной обёртки
       fullWrapper.appendChild(casinoListWrapper);
-      // Вставляем всё в основной контейнер
       containerNeoMik.appendChild(fullWrapper);
     })
     .catch((e) => console.error("Widget error:", e));
