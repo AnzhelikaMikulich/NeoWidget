@@ -15,6 +15,9 @@ const backgroundItemNeoMik = containerNeoMik.dataset.backgroundItem || "#e5e5e5"
 const backgroundButtonNeoMik = containerNeoMik.dataset.backgroundButton || "#ffcc29";
 const backgroundRatingNeoMik = containerNeoMik.dataset.backgroundRating || "#ffcc29";
 
+const containerSizeNeoMik = containerNeoMik.dataset.smallContainer || "";
+const containerClassNeoMik = containerSizeNeoMik ? 'small-container' : '';
+
   // Подключаем стили
   const linkNeoMik = document.createElement("link");
   linkNeoMik.rel = "stylesheet";
@@ -23,7 +26,7 @@ const backgroundRatingNeoMik = containerNeoMik.dataset.backgroundRating || "#ffc
 
   // Создаем обёртку для всего блока
   const fullWrapper = document.createElement("div");
-  fullWrapper.className = "mik-full-wrapper";
+  fullWrapper.className = `mik-full-wrapper ${containerClassNeoMik}`;
 
   // Добавляем заголовок, если есть
   const titleNeoMik = containerNeoMik.dataset.title;
@@ -37,6 +40,7 @@ const backgroundRatingNeoMik = containerNeoMik.dataset.backgroundRating || "#ffc
   // Создаем контейнер
   const casinoListWrapper = document.createElement("div");
   casinoListWrapper.className = "mik-cards-list";
+  
 
   // Загружаем JSON
   fetch(`${baseUrlNeoMik}/data.json`)
