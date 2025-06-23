@@ -4,7 +4,6 @@
 
   const currentScript = document.currentScript || document.querySelector('script[src*="widget-neo.js"]');
   const baseUrlNeoMik = currentScript.dataset.urlNeo;
-  console.log(baseUrlNeoMik)
 
   const depositMethods = containerNeoMik.dataset.depositMethods || "Deposit Methods:";
   const welcomePackage = containerNeoMik.dataset.welcomePackage || "Welcome Package";
@@ -39,7 +38,7 @@
   const casinoListWrapper = document.createElement("div");
   casinoListWrapper.className = "mik-cards-list";
 
-  fetch(`${baseUrlNeoMik}/data.php`)
+  fetch(`${baseUrlNeoMik}/data.json`)
     .then((res) => res.json())
     .then((casinosNeoMik) => {
       casinosNeoMik.forEach((casino, index) => {
