@@ -8,14 +8,14 @@
     "colorTitle": "#000000",
     "colorText": "#333333",
     "backgroundItem": "#f9f9f9",
-    "backgroundButton": "#ffdd55",
+    "backgroundButton": "#000000",
     "backgroundRating": "#ff8800"
   },
   
   "casinos":
 [
   {
-    "name": "StarzinoDATA",
+    "name": "StarzinoFR",
     "logo": "starzino.png",
     "rating": 5,
     "bonus": "$2200",

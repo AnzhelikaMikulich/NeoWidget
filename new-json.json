@@ -1,11 +1,11 @@
 {
   
   "settings": {
-    "title": "Casino",
+    "title": "Новый файл",
     "depositMethods": "Способы оплаты",
     "welcomePackage": "Пакет приветствия",
     "bonusUpTo": "Максимальный бонус",
-    "colorTitle": "#000000",
+    "colorTitle": "green",
     "colorText": "#333333",
     "backgroundItem": "#f9f9f9",
     "backgroundButton": "#ffdd55",
@@ -15,7 +15,7 @@
   "casinos":
 [
   {
-    "name": "StarzinoDATA",
+    "name": "StarzinoNew",
     "logo": "starzino.png",
     "rating": 5,
     "bonus": "$2200",
