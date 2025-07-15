@@ -20,9 +20,19 @@
   const containerSizeNeoMik = containerNeoMik.dataset.smallContainer || "";
   const containerClassNeoMik = containerSizeNeoMik ? 'small-container' : '';
   fullWrapper.className = `mik-full-wrapper ${containerClassNeoMik}`;
+  
+
 
   fetch(`${baseUrlNeoMik}/data.php?file=${jsonFileName}.json`)
-    .then((res) => res.json())
+    .then((res) => {
+    const warning = res.headers.get('X-MIK-WARNING');
+    if (warning) {
+      console.warn(warning); 
+    }
+    return res.json();
+  })
+    
+    
     .then((jsonData) => {
       const settings = jsonData.settings || {};
       const casinosNeoMik = jsonData.casinos || [];
